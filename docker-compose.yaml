@@ -1,0 +1,25 @@
+services:
+  minecraft:
+    image: itzg/minecraft-server:java20
+    volumes:
+      - ./serverdata:/data
+      - ./mc-srv/plugins:/plugins
+      - ./mc-srv/mods:/mods
+    ports:
+      - 25565:25565
+    environment:
+      EULA: "TRUE"
+      TYPE: "MOHIST"
+      ENABLE_WHITELIST: "FALSE"
+      ENFORCE_WHITELIST: "FALSE"
+      ONLINE_MODE: "FALSE"
+      MEMORY: 8G
+      UID: 1001
+      GID: 1001
+      VERSION: "1.20.1"
+    tty: TRUE
+    stdin_open: TRUE
+    restart: unless-stopped
+volumes:
+  minecraftdata:
+    external: true
