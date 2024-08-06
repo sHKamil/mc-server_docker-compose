@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://github.com/MohistMC/Mohist">
-    <img src="https://mohistmc.com/resources/images/Logo1.png" alt="Logo" width="250" height="250">
+    <img src="https://avatars.githubusercontent.com/u/54493246" alt="Logo" width="250" height="250">
   </a>
 
   <h3 align="center">Minecraft server with docker</h3>
